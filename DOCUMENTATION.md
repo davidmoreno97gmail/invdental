@@ -223,11 +223,17 @@ Si editas `server/data.json` manualmente, reinicia el servidor para que lea los 
 
 ## Seguridad y autenticación
 
-- Actualmente la autenticación es mock/simple:
-  - Backend expone `/api/auth/login` que compara contra un array interno `mockUsers`.
-  - El frontend intenta primero el login contra el backend y si falla utiliza usuarios mock locales para login offline.
-- No hay tokens JWT ni protección de endpoints. Las cabeceras `x-user-id` y `x-user-name` son de confianza (el cliente las proporciona).
-- Recomendación: usar JWT y middleware de autenticación para proteger endpoints y evitar suplantación.
+- Estado actual: autenticación JWT básica implementada.
+  - El endpoint `POST /api/auth/login` devuelve `{ token, user }` donde `token` es un JWT (expira por defecto en 8h) y `user` contiene { id, nombre, rol }.
+  - El servidor incorpora middleware que valida el JWT y pone `req.user` con la información del usuario. Las rutas mutativas y `/api/logs` están protegidas y requieren autenticación; `/api/logs` requiere además rol `admin`.
+  - Para desarrollo y compatibilidad con clientes existentes, el servidor sigue resolviendo `x-user-id` desde `server/data.json` cuando se manda ese header, y en `NODE_ENV==='test'` el middleware inyecta un usuario mock para que la batería de tests existente siga funcionando.
+  - Se recomienda configurar la variable de entorno `JWT_SECRET` en producción para reemplazar el secreto por defecto (actualmente `dev-secret-invdental` en desarrollo).
+
+Recomendaciones de seguridad inmediatas:
+- Mover `JWT_SECRET` a variables de entorno y almacenarlo de forma segura (no en el código fuente).
+- Servir la aplicación por HTTPS en producción y usar SameSite y Secure flags si el token se guarda en cookies.
+- Implementar refresh tokens y revocación (blacklist) si necesitas invalidar tokens antes de su expiración.
+- Considerar hardening adicional: rate limiting en el endpoint de login, validación y sanitización de inputs, y registros de auditoría más detallados.
 
 
 ## Tests automáticos
