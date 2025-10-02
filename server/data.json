@@ -1,0 +1,284 @@
+{
+  "products": [
+    {
+      "id": 1,
+      "nombre": "ampollas",
+      "cantidad": "5",
+      "proveedor": "prueba",
+      "cantidadMinima": "10",
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": "1",
+      "usuarioId": "1",
+      "qr": ""
+    },
+    {
+      "id": 2,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "/api/qr/2"
+    },
+    {
+      "id": 3,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "/api/qr/3"
+    },
+    {
+      "id": 4,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "http://127.0.0.1:44299/api/qr/4"
+    },
+    {
+      "id": 5,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "http://127.0.0.1:44145/api/qr/5"
+    },
+    {
+      "id": 6,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "http://127.0.0.1:45295/api/qr/6"
+    },
+    {
+      "id": 7,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "http://127.0.0.1:33747/api/qr/7"
+    },
+    {
+      "id": 8,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "http://127.0.0.1:43515/api/qr/8"
+    },
+    {
+      "id": 9,
+      "nombre": "TestProd",
+      "cantidad": 0,
+      "proveedor": "",
+      "cantidadMinima": 0,
+      "foto": "",
+      "codigoBarras": "",
+      "categoriaId": null,
+      "usuarioId": null,
+      "qr": "http://127.0.0.1:38903/api/qr/9"
+    }
+  ],
+  "lastId": 9,
+  "providers": [],
+  "providersLastId": 7,
+  "users": [],
+  "usersLastId": 0,
+  "categories": [],
+  "categoriesLastId": 0,
+  "logs": [
+    {
+      "id": 1,
+      "timestamp": "2025-10-02T09:13:26.486Z",
+      "action": "create_provider",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 5,
+      "itemName": "Prov1"
+    },
+    {
+      "id": 2,
+      "timestamp": "2025-10-02T09:13:26.514Z",
+      "action": "update_provider",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 5,
+      "itemName": "Prov1-Updated"
+    },
+    {
+      "id": 3,
+      "timestamp": "2025-10-02T09:13:26.530Z",
+      "action": "delete_provider",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 5
+    },
+    {
+      "id": 4,
+      "timestamp": "2025-10-02T09:13:26.906Z",
+      "action": "create_product",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 7,
+      "itemName": "TestProd"
+    },
+    {
+      "id": 5,
+      "timestamp": "2025-10-02T09:13:26.943Z",
+      "action": "update_product",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 7,
+      "itemName": "TestProd"
+    },
+    {
+      "id": 6,
+      "timestamp": "2025-10-02T09:25:34.787Z",
+      "action": "create_provider",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 6,
+      "itemName": "Prov1"
+    },
+    {
+      "id": 7,
+      "timestamp": "2025-10-02T09:25:34.867Z",
+      "action": "update_provider",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 6,
+      "itemName": "Prov1-Updated"
+    },
+    {
+      "id": 8,
+      "timestamp": "2025-10-02T09:25:34.880Z",
+      "action": "delete_provider",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 6
+    },
+    {
+      "id": 9,
+      "timestamp": "2025-10-02T09:25:35.178Z",
+      "action": "create_product",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 8,
+      "itemName": "TestProd"
+    },
+    {
+      "id": 10,
+      "timestamp": "2025-10-02T09:25:35.189Z",
+      "action": "update_product",
+      "actor": {
+        "id": null,
+        "name": null
+      },
+      "itemId": 8,
+      "itemName": "TestProd"
+    },
+    {
+      "id": 11,
+      "timestamp": "2025-10-02T09:44:32.896Z",
+      "action": "create_provider",
+      "actor": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "itemId": 7,
+      "itemName": "Prov1"
+    },
+    {
+      "id": 12,
+      "timestamp": "2025-10-02T09:44:32.924Z",
+      "action": "update_provider",
+      "actor": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "itemId": 7,
+      "itemName": "Prov1-Updated"
+    },
+    {
+      "id": 13,
+      "timestamp": "2025-10-02T09:44:32.937Z",
+      "action": "delete_provider",
+      "actor": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "itemId": 7
+    },
+    {
+      "id": 14,
+      "timestamp": "2025-10-02T09:44:33.263Z",
+      "action": "create_product",
+      "actor": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "itemId": 9,
+      "itemName": "TestProd"
+    },
+    {
+      "id": 15,
+      "timestamp": "2025-10-02T09:44:33.276Z",
+      "action": "update_product",
+      "actor": {
+        "id": 1,
+        "name": "Admin"
+      },
+      "itemId": 9,
+      "itemName": "TestProd"
+    }
+  ],
+  "logsLastId": 15
+}
